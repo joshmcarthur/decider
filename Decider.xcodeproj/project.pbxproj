@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		03530DC92D62A6A6003A8B0D /* Decider App Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 03530DA22D62A6A2003A8B0D /* Decider App Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		03530D822D62A672003A8B0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +25,61 @@
 			remoteGlobalIDString = 03530D6E2D62A66F003A8B0D;
 			remoteInfo = Decider;
 		};
+		03530DB62D62A6A6003A8B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03530D672D62A66F003A8B0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03530DA12D62A6A2003A8B0D;
+			remoteInfo = "Decider App Clip";
+		};
+		03530DC02D62A6A6003A8B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03530D672D62A66F003A8B0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03530DA12D62A6A2003A8B0D;
+			remoteInfo = "Decider App Clip";
+		};
+		03530DC72D62A6A6003A8B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03530D672D62A66F003A8B0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03530DA12D62A6A2003A8B0D;
+			remoteInfo = "Decider App Clip";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03530DCE2D62A6A6003A8B0D /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				03530DC92D62A6A6003A8B0D /* Decider App Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03530D6F2D62A66F003A8B0D /* Decider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03530D812D62A672003A8B0D /* DeciderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeciderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03530D8B2D62A672003A8B0D /* DeciderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeciderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03530DA22D62A6A2003A8B0D /* Decider App Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Decider App Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03530DB52D62A6A6003A8B0D /* Decider App ClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Decider App ClipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03530DBF2D62A6A6003A8B0D /* Decider App ClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Decider App ClipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		03530DCA2D62A6A6003A8B0D /* Exceptions for "Decider App Clip" folder in "Decider App Clip" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 03530DA12D62A6A2003A8B0D /* Decider App Clip */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		03530D712D62A66F003A8B0D /* Decider */ = {
@@ -43,6 +95,24 @@
 		03530D8E2D62A672003A8B0D /* DeciderUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DeciderUITests;
+			sourceTree = "<group>";
+		};
+		03530DA32D62A6A2003A8B0D /* Decider App Clip */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				03530DCA2D62A6A6003A8B0D /* Exceptions for "Decider App Clip" folder in "Decider App Clip" target */,
+			);
+			path = "Decider App Clip";
+			sourceTree = "<group>";
+		};
+		03530DB82D62A6A6003A8B0D /* Decider App ClipTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Decider App ClipTests";
+			sourceTree = "<group>";
+		};
+		03530DC22D62A6A6003A8B0D /* Decider App ClipUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Decider App ClipUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +139,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03530D9F2D62A6A2003A8B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03530DB22D62A6A6003A8B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03530DBC2D62A6A6003A8B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +169,9 @@
 				03530D712D62A66F003A8B0D /* Decider */,
 				03530D842D62A672003A8B0D /* DeciderTests */,
 				03530D8E2D62A672003A8B0D /* DeciderUITests */,
+				03530DA32D62A6A2003A8B0D /* Decider App Clip */,
+				03530DB82D62A6A6003A8B0D /* Decider App ClipTests */,
+				03530DC22D62A6A6003A8B0D /* Decider App ClipUITests */,
 				03530D702D62A66F003A8B0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +182,9 @@
 				03530D6F2D62A66F003A8B0D /* Decider.app */,
 				03530D812D62A672003A8B0D /* DeciderTests.xctest */,
 				03530D8B2D62A672003A8B0D /* DeciderUITests.xctest */,
+				03530DA22D62A6A2003A8B0D /* Decider App Clip.app */,
+				03530DB52D62A6A6003A8B0D /* Decider App ClipTests.xctest */,
+				03530DBF2D62A6A6003A8B0D /* Decider App ClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +199,12 @@
 				03530D6B2D62A66F003A8B0D /* Sources */,
 				03530D6C2D62A66F003A8B0D /* Frameworks */,
 				03530D6D2D62A66F003A8B0D /* Resources */,
+				03530DCE2D62A6A6003A8B0D /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03530DC82D62A6A6003A8B0D /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				03530D712D62A66F003A8B0D /* Decider */,
@@ -163,6 +262,74 @@
 			productReference = 03530D8B2D62A672003A8B0D /* DeciderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		03530DA12D62A6A2003A8B0D /* Decider App Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03530DCB2D62A6A6003A8B0D /* Build configuration list for PBXNativeTarget "Decider App Clip" */;
+			buildPhases = (
+				03530D9E2D62A6A2003A8B0D /* Sources */,
+				03530D9F2D62A6A2003A8B0D /* Frameworks */,
+				03530DA02D62A6A2003A8B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				03530DA32D62A6A2003A8B0D /* Decider App Clip */,
+			);
+			name = "Decider App Clip";
+			packageProductDependencies = (
+			);
+			productName = "Decider App Clip";
+			productReference = 03530DA22D62A6A2003A8B0D /* Decider App Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		03530DB42D62A6A6003A8B0D /* Decider App ClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03530DCF2D62A6A6003A8B0D /* Build configuration list for PBXNativeTarget "Decider App ClipTests" */;
+			buildPhases = (
+				03530DB12D62A6A6003A8B0D /* Sources */,
+				03530DB22D62A6A6003A8B0D /* Frameworks */,
+				03530DB32D62A6A6003A8B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03530DB72D62A6A6003A8B0D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				03530DB82D62A6A6003A8B0D /* Decider App ClipTests */,
+			);
+			name = "Decider App ClipTests";
+			packageProductDependencies = (
+			);
+			productName = "Decider App ClipTests";
+			productReference = 03530DB52D62A6A6003A8B0D /* Decider App ClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03530DBE2D62A6A6003A8B0D /* Decider App ClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03530DD22D62A6A6003A8B0D /* Build configuration list for PBXNativeTarget "Decider App ClipUITests" */;
+			buildPhases = (
+				03530DBB2D62A6A6003A8B0D /* Sources */,
+				03530DBC2D62A6A6003A8B0D /* Frameworks */,
+				03530DBD2D62A6A6003A8B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03530DC12D62A6A6003A8B0D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				03530DC22D62A6A6003A8B0D /* Decider App ClipUITests */,
+			);
+			name = "Decider App ClipUITests";
+			packageProductDependencies = (
+			);
+			productName = "Decider App ClipUITests";
+			productReference = 03530DBF2D62A6A6003A8B0D /* Decider App ClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +351,17 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 03530D6E2D62A66F003A8B0D;
 					};
+					03530DA12D62A6A2003A8B0D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					03530DB42D62A6A6003A8B0D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 03530DA12D62A6A2003A8B0D;
+					};
+					03530DBE2D62A6A6003A8B0D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 03530DA12D62A6A2003A8B0D;
+					};
 				};
 			};
 			buildConfigurationList = 03530D6A2D62A66F003A8B0D /* Build configuration list for PBXProject "Decider" */;
@@ -203,6 +381,9 @@
 				03530D6E2D62A66F003A8B0D /* Decider */,
 				03530D802D62A672003A8B0D /* DeciderTests */,
 				03530D8A2D62A672003A8B0D /* DeciderUITests */,
+				03530DA12D62A6A2003A8B0D /* Decider App Clip */,
+				03530DB42D62A6A6003A8B0D /* Decider App ClipTests */,
+				03530DBE2D62A6A6003A8B0D /* Decider App ClipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +404,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		03530D892D62A672003A8B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03530DA02D62A6A2003A8B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03530DB32D62A6A6003A8B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03530DBD2D62A6A6003A8B0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +455,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03530D9E2D62A6A2003A8B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03530DB12D62A6A6003A8B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03530DBB2D62A6A6003A8B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +488,21 @@
 			isa = PBXTargetDependency;
 			target = 03530D6E2D62A66F003A8B0D /* Decider */;
 			targetProxy = 03530D8C2D62A672003A8B0D /* PBXContainerItemProxy */;
+		};
+		03530DB72D62A6A6003A8B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03530DA12D62A6A2003A8B0D /* Decider App Clip */;
+			targetProxy = 03530DB62D62A6A6003A8B0D /* PBXContainerItemProxy */;
+		};
+		03530DC12D62A6A6003A8B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03530DA12D62A6A2003A8B0D /* Decider App Clip */;
+			targetProxy = 03530DC02D62A6A6003A8B0D /* PBXContainerItemProxy */;
+		};
+		03530DC82D62A6A6003A8B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03530DA12D62A6A2003A8B0D /* Decider App Clip */;
+			targetProxy = 03530DC72D62A6A6003A8B0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +756,146 @@
 			};
 			name = Release;
 		};
+		03530DCC2D62A6A6003A8B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Decider App Clip/Decider_App_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Decider App Clip/Preview Content\"";
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Decider App Clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Decider;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.listdecider.Decider.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03530DCD2D62A6A6003A8B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Decider App Clip/Decider_App_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Decider App Clip/Preview Content\"";
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Decider App Clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Decider;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.listdecider.Decider.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03530DD02D62A6A6003A8B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmcarthur.listdecider.Decider.Decider-App-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decider App Clip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Decider App Clip";
+			};
+			name = Debug;
+		};
+		03530DD12D62A6A6003A8B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmcarthur.listdecider.Decider.Decider-App-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decider App Clip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Decider App Clip";
+			};
+			name = Release;
+		};
+		03530DD32D62A6A6003A8B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmcarthur.listdecider.Decider.Decider-App-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Decider App Clip";
+			};
+			name = Debug;
+		};
+		03530DD42D62A6A6003A8B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmcarthur.listdecider.Decider.Decider-App-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Decider App Clip";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +931,33 @@
 			buildConfigurations = (
 				03530D9C2D62A672003A8B0D /* Debug */,
 				03530D9D2D62A672003A8B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03530DCB2D62A6A6003A8B0D /* Build configuration list for PBXNativeTarget "Decider App Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03530DCC2D62A6A6003A8B0D /* Debug */,
+				03530DCD2D62A6A6003A8B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03530DCF2D62A6A6003A8B0D /* Build configuration list for PBXNativeTarget "Decider App ClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03530DD02D62A6A6003A8B0D /* Debug */,
+				03530DD12D62A6A6003A8B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03530DD22D62A6A6003A8B0D /* Build configuration list for PBXNativeTarget "Decider App ClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03530DD32D62A6A6003A8B0D /* Debug */,
+				03530DD42D62A6A6003A8B0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

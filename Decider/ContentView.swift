@@ -1,61 +1,54 @@
-//
-//  ContentView.swift
-//  Decider
-//
-//  Created by Josh McArthur on 17/02/2025.
-//
-
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        VStack(spacing: 24) {
+            Image(systemName: "dice")
+                .font(.system(size: 60))
+                .foregroundStyle(.tint)
+            
+            Text("Decider")
+                .font(.largeTitle)
+                .bold()
+            
+            Text("This utility works best as an App Clip!")
+                .font(.headline)
+            
+            VStack(alignment: .leading, spacing: 16) {
+                FeatureRow(icon: "square.and.arrow.up",
+                          text: "Share any list to quickly pick a random item")
+                
+                FeatureRow(icon: "bolt",
+                          text: "Access instantly without installation")
+                
+                FeatureRow(icon: "arrow.up.heart",
+                          text: "Perfect for quick decisions")
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+            .padding(.vertical)
+            
+            Text("To use Decider, simply share text from any app and select Decider from the share sheet.")
+                .multilineTextAlignment(.center)
+                .foregroundStyle(.secondary)
+                .padding()
         }
+        .padding()
     }
+}
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+struct FeatureRow: View {
+    let icon: String
+    let text: String
+    
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: icon)
+                .frame(width: 24)
+            Text(text)
         }
     }
 }
 
+
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
