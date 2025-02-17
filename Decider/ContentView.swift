@@ -55,6 +55,7 @@ class QuickInputState: ObservableObject {
     @Published var selectedItem: String?
     @Published var items: [String] = []
     @Published var title: String?
+    @Published var errorMessage: String?
 
     var isScanning: Bool {
         DataScannerViewController.isSupported &&
@@ -105,10 +106,19 @@ class QuickInputState: ObservableObject {
             title = nil
         }
 
-        if !items.isEmpty {
-            selectedItem = items.randomElement()
-            showingResult = true
+        if items.isEmpty {
+            errorMessage = "No items found in the text"
+            return
         }
+
+        if items.count == 1 {
+            errorMessage = "Add one more item to make a decision"
+            return
+        }
+
+        errorMessage = nil
+        selectedItem = items.randomElement()
+        showingResult = true
     }
 }
 
@@ -335,6 +345,7 @@ struct TipRow: View {
     let title: String
     let description: String
     let example: String
+    @StateObject private var quickInput = QuickInputState()
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -351,8 +362,22 @@ struct TipRow: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(Color(.systemGray6))
                 .cornerRadius(8)
+
+            Button {
+                quickInput.processText(example)
+            } label: {
+                Label("Try this example", systemImage: "play.circle.fill")
+            }
+            .buttonStyle(.bordered)
+            .tint(.accentColor)
         }
         .padding(.vertical, 8)
+        .sheet(isPresented: $quickInput.showingResult) {
+            QuickResultView(
+                quickInput: quickInput,
+                history: DecisionHistory()
+            )
+        }
     }
 }
 
