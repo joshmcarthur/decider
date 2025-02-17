@@ -10,6 +10,7 @@ struct AnimatedSelectionView: View {
     @State private var scale = 1.0
     @State private var opacity = 1.0
     @State private var selectedItem: String?
+    @State private var errorMessage: String?
 
     private let spinDuration = 2.0
     private let spinItems = 20 // Number of items to show during spin
@@ -28,6 +29,7 @@ struct AnimatedSelectionView: View {
                     Button("Try again") {
                         withAnimation {
                             selectedItem = nil
+                            errorMessage = nil
                         }
                     }
                     .font(.subheadline)
@@ -41,7 +43,17 @@ struct AnimatedSelectionView: View {
                         .opacity(opacity)
                         .animation(.easeInOut(duration: 0.15), value: currentIndex)
 
+                    if let error = errorMessage {
+                        Text(error)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
+
                     Button {
+                        if items.count < 2 {
+                            errorMessage = "Add one more item to make a decision"
+                            return
+                        }
                         startSpinning()
                     } label: {
                         Image(systemName: "dice")
