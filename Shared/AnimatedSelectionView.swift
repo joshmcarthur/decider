@@ -78,11 +78,11 @@ struct AnimatedSelectionView: View {
         selectedItem = nil
 
         // Start with fast spinning
-        spinThroughItems(interval: 0.05, count: spinItems) {
+        spinThroughItems(interval: 0.1, count: spinItems) {
             // Slow down
-            spinThroughItems(interval: 0.1, count: 8) {
+            spinThroughItems(interval: 0.2, count: spinItems) {
                 // Final slowdown
-                spinThroughItems(interval: 0.2, count: 4) {
+                spinThroughItems(interval: 0.3, count: spinItems) {
                     // Pick final item
                     let finalItem = items.randomElement() ?? items[0]
                     withAnimation(.spring(response: 0.5, dampingFraction: 0.6)) {
