@@ -6,11 +6,9 @@
 //
 
 import SwiftUI
-import SwiftData
 
 @main
 struct DeciderApp: App {
-
     var body: some Scene {
         WindowGroup {
             ContentView()
