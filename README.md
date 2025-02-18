@@ -13,6 +13,8 @@ A lightweight iOS/iPadOS/macOS app that helps you make decisions by randomly sel
 - 📱 Native support for iPhone, iPad, and Mac
 - 🔒 Privacy-focused with no data collection
 
+![Decider Screenshot](App%20Store%20Listing/decider-choice-light.png)
+
 ## Screenshots
 
 See the `App Store Listing` directory for screenshots and app store resources.
@@ -55,6 +57,7 @@ Decider/
 ## Privacy
 
 This app is designed with privacy in mind:
+
 - No data collection or analytics
 - All processing happens on device
 - History stored locally only
@@ -62,11 +65,17 @@ This app is designed with privacy in mind:
 
 ## License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0). This means:
+
+- You can freely use, modify, and distribute this software
+- Any modifications or derivative works must also be released under the GPL-3.0
+- The full source code must be made available when distributing the software
+- Changes made to the code must be documented
+
+See the `LICENSE` file for the complete license text.
 
 ## Acknowledgments
 
 - Built with SwiftUI
 - Uses VisionKit for text scanning
 - Inspired by the need to make quick decisions without overthinking
-
